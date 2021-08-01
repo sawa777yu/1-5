@@ -1,0 +1,157 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* headerにも上下の指定があったがその構文が抜けていた*/
+header {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/*自分はnavタグに指定をしているが解答では.nav-listタグに記載がされている。
+どちらでも結果は変わらなかった。 */
+/*自分の解答では最初にborderを記載しているので上下左右に線ができてしまった。
+answerによると下記のように記載がされている。 
+border-bottom: 1px solid #848282;
+border-top: 1px solid #848282;
+このように書けば上下にのみ線が出来上がる状態となる。  */
+
+nav{
+  border: solid black;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-right-width: 0;
+  border-left-width: 0;
+}
+
+.nav-list{
+  text-align: center;
+  padding: 15px 0;
+/*answerでは下記が入っているのだが必要なのだろうか。
+margin: 0 auto;*/
+}
+
+.nav-list-item{
+  list-style: none;
+  display: inline-block;
+  margin:0 20px;
+}
+
+/*answerではheaderタグに下記内容の記載があるためh1タグには不要*/
+h1{
+  margin: 20px;
+  text-align: center;
+}
+
+/*answerにあるflex-wrapの構文を使えば色ごとにグループを分ける必要がなく
+親要素の横幅に合わせての折返しができた*/
+.green{
+  width: 800px;
+  height: 200px;
+  margin: 50px auto 0;
+  display: flex;
+  justify-content: center;
+}
+
+.green1{
+  width: 200px;
+  height: 200px;
+  background-color: #e6ffe9;
+}
+
+.green2{
+  width: 200px;
+  height: 200px;
+  background-color: #cdffd3;
+}
+
+.green3{
+  width: 200px;
+  height: 200px;
+  background-color: #aeffbd;
+}
+
+.green4{
+  width: 200px;
+  height: 200px;
+  background-color: #93ffab;
+}
+
+.yellow{
+  width: 800px;
+  height: 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.yellow1{
+  width: 200px;
+  height: 200px;
+  background-color: #f3ffd8;
+}
+
+.yellow2{
+  width: 200px;
+  height: 200px;
+  background-color: #edffbe;
+}
+
+.yellow3{
+  width: 200px;
+  height: 200px;
+  background-color: #e9ffa5;
+}
+
+.yellow4{
+  width: 200px;
+  height: 200px;
+  background-color: #e4ff8d;
+}
+
+.blue{
+  width: 800px;
+  height: 200px;
+  margin: 0 auto 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.blue1{
+  width: 200px;
+  height: 200px;
+  background-color: #d9e5ff;
+}
+
+.blue2{
+  width: 200px;
+  height: 200px;
+  background-color: #bad3ff;
+}
+
+.blue3{
+  width: 200px;
+  height: 200px;
+  background-color: #a4c6ff;
+}
+
+.blue4{
+  width: 200px;
+  height: 200px;
+  background-color: #8eb8ff;
+}
+
+footer{
+  width: 100%;
+  height: 120px;
+  text-align: center;
+  line-height: 120px;
+  background-color: gray;
+}
+
+.footer-text{
+  color: white;
+}
